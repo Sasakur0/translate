@@ -1,0 +1,13 @@
+services:
+  whisper-turbo:
+    build:
+      context: .
+      dockerfile: Dockerfile.whisper-turbo
+    image: local/whisper-turbo:latest
+    environment:
+      - MODEL_SIZE=large-v3-turbo
+      - DEVICE=cpu
+      - COMPUTE_TYPE=int8
+    volumes:
+      - ./data:/data
+    working_dir: /data

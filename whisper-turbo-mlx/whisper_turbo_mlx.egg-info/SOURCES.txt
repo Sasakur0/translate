@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+whisper_turbo.py
+whisper_turbo_mlx.egg-info/PKG-INFO
+whisper_turbo_mlx.egg-info/SOURCES.txt
+whisper_turbo_mlx.egg-info/dependency_links.txt
+whisper_turbo_mlx.egg-info/entry_points.txt
+whisper_turbo_mlx.egg-info/requires.txt
+whisper_turbo_mlx.egg-info/top_level.txt

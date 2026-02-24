@@ -1,0 +1,2 @@
+[console_scripts]
+wtm = whisper_turbo:fire_main
