@@ -1,0 +1,7 @@
+tunnel: your-fixed-tunnel-name
+credentials-file: /absolute/path/to/your-fixed-tunnel.json
+
+ingress:
+  - hostname: your-domain.example.com
+    service: http://127.0.0.1:8000
+  - service: http_status:404

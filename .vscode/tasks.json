@@ -1,0 +1,70 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Translate: 启动前后端",
+      "type": "shell",
+      "command": "bash ./start_translate.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Translate: 启动并实时看日志",
+      "type": "shell",
+      "command": "bash ./start_translate.sh --follow",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Translate: 实时日志",
+      "type": "shell",
+      "command": "bash ./watch_translate_logs.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Translate: 停止前后端",
+      "type": "shell",
+      "command": "bash ./stop_translate.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Translate: 重启前后端",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Translate: 停止前后端",
+        "Translate: 启动前后端"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

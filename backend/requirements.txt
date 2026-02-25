@@ -3,4 +3,8 @@ uvicorn[standard]
 yt-dlp
 faster-whisper
 aliyun-python-sdk-core
-oss2
+# Qwen3-ASR 官方推荐运行时封装
+qwen-asr
+torch
+accelerate
+soundfile
